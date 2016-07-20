@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/游戏_开始.css"/>
+		<style type="text/css">
+			#music{
+				width: 10%;
+				position: absolute;
+				top: 2%;
+				left: 2%;
+				-webkit-animation: flash 2s infinite linear;
+				z-index: 10;
+			}
+			#xing{
+				width: 20%;
+				position: absolute;
+				top: 30%;
+				left: 78%;
+				z-index: 0;
+			}
+			.guanka{
+				color: white;
+				font-size: 600%;
+				margin-top: 12%;
+				margin-bottom: 10%;
+				display: none;
+			}
+			#bg{
+				width: 90%;
+			}
+			#main{
+				position: relative;
+				display: none;
+			}
+			.time{
+				color: red;
+				font-size: 350%;
+				position: absolute; 
+				left: 0; 
+				top: 1%; 
+				right: 0; 
+				bottom: 0;
+   				margin: auto;
+			}
+			#gamerMain{
+				width: 83%;
+				height: 80%;
+				position: absolute;
+				left: 0; 
+				 top: 0; 
+				 right: 0; 
+				 bottom: 0;
+   				 margin: auto;
+			}
+			.tanchuang{
+				display: inline-block;
+				position: absolute;
+				left: 0; 
+				top: 10%; 
+				right: 0; 
+				bottom: 0;
+   				margin: auto;
+   				text-align: center;
+   				z-index: 100;
+   				display: none;
+			}
+			.tankuang_img{
+				width: 70%;
+			}
+			.suipian{
+				position: absolute;
+				color: rgb(66,170,209);
+				font-size: 300%;
+				margin-left: 18%;
+				margin-top: 5%;
+			}
+			.suipiantou{
+				width: 40%;
+				height: 44%;
+				position: absolute;
+				top: 20%;
+				left: 30%;
+				overflow: hidden;
+			}
+			.touzi{
+				width: 500%;
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			.jieshao{
+				width: 35%;
+				color: white;
+				position: absolute;
+				top: 68%;
+				left: 32%;
+				font-size: 200%;
+				line-height: 1.5em;
+			}
+			.tupian{
+				display: inline-block;
+				position: relative;
+			}
+			.tupian img:nth-of-type(2){
+				position: absolute;
+				top: 6%;
+				left: 20%;
+			}
+			#zhebu{
+				position: absolute;
+				top: 0;
+				background: black;
+				opacity: 0.90;
+				z-index: 50;
+				display: none;
+			}
+			#over{
+				position: absolute;
+				top: 15%;
+				left:-5%;
+				text-align: center;
+				display: none;
+			}
+			#over p{
+				position: absolute;
+				left: 0; 
+				top: 0;
+				right: 0; 
+				bottom: 0;
+   				margin: auto;
+				color: white;
+			}
+			#over div{
+				width: 40%;
+				height: 8%;
+				line-height: 140%;
+				text-align: center;
+				position: absolute;
+				color: rgb(99,185,216);
+				left: 0; 
+				top: 0; 
+				right: 0; 
+				bottom: 0;
+   				margin: auto;
+   				border: 1px solid rgb(91,116,129);
+   				border-radius: 20px;
+   				cursor: pointer;
+			}
+			#over div:nth-of-type(1){
+				top: 52%;
+				font-size: 150%;
+			}
+			#over div:nth-of-type(2){
+				top: 72%;
+				font-size: 150%;
+			}
+			#over p:nth-of-type(1){
+				top: 35%;
+				font-size: 250%;
+			}
+			#over p:nth-of-type(2){
+				top: 50%;
+				font-size: 90%;
+			}
+			#over p:nth-of-type(3){
+				top: 58%;
+				font-size: 90%;
+			}
+			#sucess{
+				width: 100%;
+				margin-top: 60%;
+				display: none;
+			}
+			.chenggonghua1{
+				width: 100%;
+				color: white;
+				margin-bottom: 2%;
+				font-size: 150%;
+				display: none;		
+			}
+			#heti{
+				margin-top:20% ;
+			}
+			.wenzi{
+				position: absolute;
+				top: 35%;
+				left: 34%;
+			}
+			.wenzi p{
+				color: white;
+				line-height: 1.2em;
+			}  
+			.choujiang{
+				color: rgb(110,160,185);
+				margin-top: 50%;
+				margin-bottom: 10%;
+				padding: 5%;
+				border: 1px solid rgb(110,160,185);
+				border-radius: 20px;
+				cursor: pointer;
+			} 
+			.shuoming:nth-of-type(2){
+				color: rgb(110,160,185);
+				padding: 5%;
+				border: 1px solid rgb(110,160,185);
+				border-radius: 20px;
+				cursor: pointer;
+			}   
+			.meiyouzhongjiang{
+				position: absolute;
+				top: 20%;
+				z-index: 51;
+				display: none;
+			}   
+			.meiyouzhongjiang p{
+				position: absolute;
+				top: 20%;
+				color: white;
+			}  
+			.meiyouzhongjiang p:nth-of-type(1){
+				top: 38%;
+				left: 40%;
+				font-size: 30px;
+			}   
+			.meiyouzhongjiang p:nth-of-type(2){
+				top: 56%;
+				left: 27%;
+				font-size: 15px;
+			}  
+			.fanhuiyouxi{
+				position: absolute;
+				display: inline-block;
+				color: rgb(110,160,185);
+				padding: 1% 2%;
+				top: 75%;
+				left: 43%;
+				border: 1px solid rgb(110,160,185);
+				border-radius: 20px;
+			}                                                                        
+			.zhongjiang{
+				position: absolute;
+				top:0%;
+				z-index: 51;
+				display: none;
+			}
+			.zhongjiang p{
+				position: absolute;
+				top: 20%;
+				color: white;
+			}  
+			.zhongjiang p:nth-of-type(1){
+				top: 56%;
+				left: 42%;
+				font-size: 25px;
+			}   
+			.zhongjiang p:nth-of-type(2){
+				top: 64%;
+				left: 32%;
+				font-size: 15px;
+			}
+			.zhongjiang lable{
+				color: white;
+			}
+			input{
+				outline: none;
+			}
+			.zhongjiang lable:nth-of-type(1){
+				position: absolute;
+				top: 70%;
+				left: 29%;
+			}
+			.zhongjiang lable:nth-of-type(2){
+				position: absolute;
+				top: 77%;
+				left: 29%;
+			}
+			.zhongjiang .tijiao{
+				position: absolute;
+				color: rgb(110,160,185);
+				top: 86%;
+				left: 43%;
+				padding: 1%;
+				border-radius: 10px;
+				border: 1px solid rgb(110,160,185);
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="body">
+			<img src="img/jian.png" id="music"/>
+			<img src="img/xingxing.png" id="xing"/>
+			<p class="guanka"></p>
+			<div id="main">
+				<p class="time">30.00</p>
+				<img src="img/ding.png" id="bg"/>
+				<div id="gamerMain">
+					
+				</div>
+				<div class="tanchuang">
+					<p class="suipian"></p>
+					<img src="img/qiusan.png" class="tankuang_img"/>
+					<div class="suipiantou">
+						<img src="img/tou.png" class="touzi"/>
+					</div>
+					<p class="jieshao"></p>
+				</div>
+			</div>
+			<div id="zhebu">
+				
+			</div>
+			<div id="over">
+				<img src="img/jiqiren.png" class="shibai"/>
+				<p>很遗憾</p>
+				<p>你没有找齐徐峥的8个分身</p>
+				<p>看来他要一直要囧在宇宙太阳系了</p>
+				<div id="ag"><b>再来一次</b></div>
+				<div class="shuoming"><b>游戏说明</b></div>
+			</div>
+			<div id="sucess">
+				<div class="chenggonghua">
+					<p class="chenggonghua1">旺德福</p>
+					<p class="chenggonghua1">你已集齐徐峥分身</p>
+					<p class="chenggonghua1">vivo X5pro碎片开始合体</p>
+					<p class="chenggonghua1">...</p>
+				</div>
+			</div>
+			<div id="shoujipintu">
+				
+			</div>
+			<div id="heti">
+				<img src="img/shou.png"/>
+				<div class="wenzi">
+					<p>成功合体！</p>
+					<p>距离启动神秘力量</p>
+					<p>还差最后一步</p>
+					<p>请点击......</p>
+					<div class="choujiang">
+						开始抽奖
+					</div>
+					<div class="shuoming">
+						游戏说明
+					</div>
+					
+				</div>
+			</div>
+			<div class="meiyouzhongjiang">
+				<img src="img/jiqiren.png"/>
+				<p>很遗憾</p>
+				<p>你没有抽中奖品，再玩一次吧！</p>
+				<div class="fanhuiyouxi">
+					返回游戏
+				</div>
+			</div>
+				
+			<!--手机-->
+			<div class="zhongjiang">
+				
+				<img src="img/kong.png"/>
+				<img src="img/feixing.png"/>
+				<p>恭喜您</p>
+				<p>获得了vivo X5pro手机一台</p>
+				<lable>姓名：<input type="text" name="shouji_peopleName" id="shouji_name"/></lable>
+				<br />
+				<lable>手机：<input type="text" name="shouji_peoplePhone" id="shouji_phone"/></lable>
+				<br />
+				<div class="tijiao">
+					提交信息
+				</div>
+			</div>
+				
+			<!--电影票-->
+			<div class="zhongjiang">
+				
+				<img src="img/kong.png"/>
+				<img src="img/feixing.png"/>
+				<p>恭喜您</p>
+				<p>获得了最新港囧电影票一张</p>
+				<lable>姓名：<input type="text" name="dianying_peopleName" id="dianyingpiao_name"/></lable>
+				<br />
+				<lable>手机：<input type="text" name="dianying_peoplePhone" id="dianyingpiao_phone"/></lable>
+				<br />
+				<div class="tijiao">
+					提交信息
+				</div>
+			</div>
+				
+			<!--充电宝-->
+			<div class="zhongjiang">
+				
+				<img src="img/kong.png"/>
+				<img src="img/feixing.png"/>
+				<p>恭喜您</p>
+				<p>获得了vivo充电宝一个</p>
+				<lable>姓名：<input type="text" name="chongdianbao_peopleName"/></lable>
+				<br />
+				<lable>手机：<input type="text" name="chongdianbao_peoplePhone"/></lable>
+				<br />
+				<div class="tijiao">
+					提交信息
+				</div>
+			</div>
+				
+			<!--耳机-->
+			<div class="zhongjiang">
+				
+				<img src="img/kong.png"/>
+				<img src="img/feixing.png"/>
+				<p>恭喜您</p>
+				<p>获得了vivo耳机一个</p>
+				<lable>姓名：<input type="text" name="erji_peopleName"/></lable>
+				<br />
+				<lable>手机：<input type="text" name="erji_peoplePhone"/></lable>
+				<br />
+				<div class="tijiao">
+					提交信息
+				</div>
+			</div>
+			<div class="zhongjiang">
+				<!--签名照-->
+				<img src="img/kong.png"/>
+				<img src="img/feixing.png"/>
+				<p>恭喜您</p>
+				<p>获得了徐峥签名照一张</p>
+				<lable>姓名：<input type="text" name="qianming_peopleName"/></lable>
+				<br />
+				<lable>手机：<input type="text" name="qianming_peoplePhone"/></lable>
+				<br />
+				<div class="tijiao">
+					提交信息
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/判断设备类型.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/游戏_开始.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/游戏正题.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/tijiao.js" type="text/javascript" charset="utf-8"></script>
+</html>

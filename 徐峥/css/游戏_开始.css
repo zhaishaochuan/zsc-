@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#body{
+	background: url(../img/bg.jpg);
+	background-size: 100% 100%;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+@-webkit-keyframes flash{
+/* 动画时间的百分比      100%这个状态必须有*/
+0%{
+	-webkit-transform: rotate(0deg) ;
+	-ms-transform: rotate(0deg) ;
+	-o-transform: rotate(0deg) ;
+	transform: rotate(0deg) ;
+}
+100%{
+	-webkit-transform: rotate(360deg) ;
+	-ms-transform: rotate(360deg) ;
+	-o-transform: rotate(360deg) ;
+	transform: rotate(360deg) ;
+	}
+}

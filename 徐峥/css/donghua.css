@@ -1,0 +1,191 @@
+@-webkit-keyframes flash{
+/* 动画时间的百分比      100%这个状态必须有*/
+0%{
+	-webkit-transform: rotate(0deg) ;
+	-ms-transform: rotate(0deg) ;
+	-o-transform: rotate(0deg) ;
+	transform: rotate(0deg) ;
+}
+100%{
+	-webkit-transform: rotate(360deg) ;
+	-ms-transform: rotate(360deg) ;
+	-o-transform: rotate(360deg) ;
+	transform: rotate(360deg) ;
+	}
+}
+@-webkit-keyframes flashMiddleOne{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0,20%) ;
+		-ms-transform:translate(0,20%) ;
+		-o-transform:translate(0,20%) ;
+		transform:translate(0,20%) ;
+	}
+	49.9%{
+		-webkit-transform:translate(0,30%) ;
+		-ms-transform:translate(0,30%) ;
+		-o-transform:translate(0,30%) ;
+		transform:translate(0,30%) ;
+		}
+	100%{
+		-webkit-transform: translate(0,20%) ;
+		-ms-transform:translate(0,20%) ;
+		-o-transform:translate(0,20%) ;
+		transform:translate(0,20%) ;
+	}
+}
+@-webkit-keyframes flashMiddleTwo{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+	49.9%{
+		-webkit-transform:translate(0,20%) ;
+		-ms-transform:translate(0,20%) ;
+		-o-transform:translate(0,20%) ;
+		transform:translate(0,20%) ;
+		}
+	100%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+}
+@-webkit-keyframes flashMiddleThree{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+	49.9%{
+		-webkit-transform:translate(0,30%) ;
+		-ms-transform:translate(0,30%) ;
+		-o-transform:translate(0,30%) ;
+		transform:translate(0,30%) ;
+		}
+	100%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+}
+@-webkit-keyframes flashMiddleXingQiu1{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+	49.9%{
+		-webkit-transform:translate(10%,30%) ;
+		-ms-transform:translate(10%,30%) ;
+		-o-transform:translate(10%,30%) ;
+		transform:translate(10%,30%) ;
+		}
+	100%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+}
+@-webkit-keyframes flashMiddleXingQiu2{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+	49.9%{
+		-webkit-transform:translate(-10%,20%) ;
+		-ms-transform:translate(-10%,20%) ;
+		-o-transform:translate(-10%,20%) ;
+		transform:translate(-10%,20%) ;
+		}
+	100%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+}
+@-webkit-keyframes flashMiddleXingQiu3{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+	49.9%{
+		-webkit-transform:translate(-10%,-20%) ;
+		-ms-transform:translate(-10%,-20%) ;
+		-o-transform:translate(-10%,-20%) ;
+		transform:translate(-10%,-20%) ;
+		}
+	100%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+}
+@-webkit-keyframes flashMiddleXingQiu4{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+	49.9%{
+		-webkit-transform:translate(20%,-30%) ;
+		-ms-transform:translate(20%,-30%) ;
+		-o-transform:translate(20%,-30%) ;
+		transform:translate(20%,-30%) ;
+		}
+	100%{
+		-webkit-transform: translate(0) ;
+		-ms-transform:translate(0) ;
+		-o-transform:translate(0) ;
+		transform:translate(0) ;
+	}
+}
+@-webkit-keyframes xuanzhuanxiaoshi{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		-webkit-transform: scale(1) rotate(0) translate(0) ;
+		-ms-transform: scale(1) rotate(0) translate(0);
+		-o-transform: scale(1) rotate(0) translate(0);
+		transform: scale(1) rotate(0) translate(0);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: scale(0) rotate(720deg) translate(0,-2%);
+		-ms-transform: scale(0) rotate(720deg) translate(0,-2%);
+		-o-transform: scale(0) rotate(720deg) translate(0,-2%);
+		transform: scale(0) rotate(720deg) translate(0,-2%);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes jiantou{
+	/* 动画时间的百分比      100%这个状态必须有*/
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
